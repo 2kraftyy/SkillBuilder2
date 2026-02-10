@@ -18,8 +18,8 @@ public class GameMaster {
         totalExperiencePoints = 0;
     }
     public static void main(String[] args){
-        gainExperience(100);
-        applyPowerUp(500);
+        gainExperience(500);
+        applyPowerUp(100);
         applyPowerUp(2.5);
         System.out.print(getTeamXP());
     }
