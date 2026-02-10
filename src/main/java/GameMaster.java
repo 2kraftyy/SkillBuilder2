@@ -21,6 +21,7 @@ public class GameMaster {
         gainExperience(100);
         applyPowerUp(500);
         applyPowerUp(2.5);
+        System.out.print(getTeamXP());
     }
 
 }
