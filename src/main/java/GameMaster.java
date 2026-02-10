@@ -1,8 +1,8 @@
 public class GameMaster {
     private static int totalExperiencePoints;
 
-    public static void gainExperience(int x){
-        totalExperiencePoints += x;
+    public static void gainExperience(int xp){
+        totalExperiencePoints += xp;
     }
     public static int getTeamXP(){
         return totalExperiencePoints;
@@ -12,7 +12,7 @@ public class GameMaster {
         totalExperiencePoints += xp;
     }
     public static void applyPowerUp(double multiplier){
-        totalExperiencePoints *= multiplier;
+        totalExperiencePoints = (int)(totalExperiencePoints*multiplier);
     }
     public static void resetGame(){
         totalExperiencePoints = 0;
